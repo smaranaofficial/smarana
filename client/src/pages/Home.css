@@ -1,0 +1,18 @@
+/* src/pages/Home.css */
+.home {
+  text-align: center;
+  background-color: #fdf6f8;
+  color: #7A2846;
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  animation: fadeIn 0.5s ease-in 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to { opacity: 1; }
+}

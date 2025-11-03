@@ -1,0 +1,35 @@
+@import './styles/colors.css';
+
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f4f0;
+  color: #2b2b2b;
+  text-align: center;
+  padding-top: 100px;
+}
+/* App.css */
+
+.app {
+  text-align: center;
+  background-color: #fdf6f8; /* soft blush pink */
+  color: #1a1a1a;
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: #7A2846; /* deep plum */
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+}
+
+p {
+  color: #b4535a; /* rose accent */
+  font-size: 1.2rem;
+}
+
