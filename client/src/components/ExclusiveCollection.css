@@ -1,0 +1,84 @@
+/* src/components/ExclusiveCollection.css */
+.exclusive-section {
+  background: #f6f4f4;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.exclusive-title{
+  text-align: left;
+  font-size: 2rem;
+  color: var(--secondary);
+  padding: 2rem 2rem 2rem 0rem;
+  font-weight: 600;
+}
+.exclusive-collection {
+  padding: 2rem;
+  background-color: rgb(16, 16, 16);
+}
+
+.exclusive-collection h2 {
+  font-size: 1rem;
+  color:rgb(204, 45, 45) ;
+  text-align: left;
+  margin-bottom: 1.5rem;
+  font-weight: 1000;
+  font-style: italic;
+}
+
+/* Horizontal scroll section */
+.collection-scroll {
+  display: flex;
+  overflow-x: auto;
+  gap: 1.5rem;
+  scroll-behavior: smooth;
+  padding-bottom: 1rem;
+  scrollbar-width: none; /* For Firefox */
+}
+
+.collection-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.collection-scroll::-webkit-scrollbar-thumb {
+  background: #a76262;
+  border-radius: 4px;
+}
+
+.collection-card {
+  flex: 0 0 300px;
+  background: #ebe0e0;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.collection-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+.collection-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.collection-card h3 {
+  padding: 1rem;
+  font-size: 1.1rem;
+  color: var(--secondary);
+  text-align: center;
+  font-style: italic;
+}
+
+/* Make it responsive */
+@media (max-width: 768px) {
+  .collection-card {
+    flex: 0 0 220px;
+  }
+
+  .collection-card img {
+    height: 160px;
+  }
+}

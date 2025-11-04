@@ -1,13 +1,13 @@
 // src/components/SplashScreen.js
 import React, { useEffect } from 'react';
 import './SplashScreen.css';
-import logo from '../assets/SMARANA4.png'; // your logo path
+import logo from '../assets/SMARANA4.png';
 
 const SplashScreen = ({ onFinish }) => {
   useEffect(() => {
     const timer = setTimeout(() => {
-      onFinish();
-    }, 2500); // 1 seconds fade time
+      if (typeof onFinish === 'function') onFinish();
+    }, 2500);
     return () => clearTimeout(timer);
   }, [onFinish]);
 

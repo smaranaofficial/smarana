@@ -1,17 +1,23 @@
 /* src/components/SplashScreen.css */
 
 .splash-screen {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: hsl(0, 0%, 13%); /* soft blush tone */
+  background-color: hwb(0 4% 96% / 0.899); /* soft blush tone */
+  z-index: 9999;
   animation: fadeOut 0.5s ease-in-out 5s forwards; /* fades out after 2s */
 }
 
 .splash-logo {
   width: 300px;
   opacity: 0;
+  height: auto;
   animation: fadeIn 1s ease-in forwards;
 }
 

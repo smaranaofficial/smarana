@@ -1,7 +1,19 @@
+// src/App.js
+import React, { useState } from "react";
+import SplashScreen from "./components/SplashScreen";
+import Home from "./pages/Home";
+import "./App.css";
+
 function App() {
+  const [showSplash, setShowSplash] = useState(true);
+
+  const handleSplashFinish = () => {
+    setShowSplash(false);
+  };
+
   return (
-    <div className="flex h-screen items-center justify-center bg-gradient-to-r from-pink-500 to-rose-500 text-white text-4xl font-bold">
-      TailwindCSS is working 🎉
+    <div className="App">
+      {showSplash ? <SplashScreen onFinish={handleSplashFinish} /> : <Home />}
     </div>
   );
 }
