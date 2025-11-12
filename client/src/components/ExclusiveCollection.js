@@ -1,4 +1,5 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import "./ExclusiveCollection.css";
 import img1 from "../assets/banner1.jpg.png";
 import img2 from "../assets/banner2.jpg.png";
@@ -11,6 +12,7 @@ const collections = [
 ];
 
 const ExclusiveCollection = () => {
+  const navigate = useNavigate(); 
   return (
     <section className="exclusive-section" id="collections">
       <h2 className="exclusive-title">Exclusive Collections</h2>
@@ -19,7 +21,7 @@ const ExclusiveCollection = () => {
           <div className="collection-card" key={item.id}>
             <img src={item.img} alt={item.title} className="collection-img" />
             <h3>{item.title}</h3>
-            <button>Explore Now</button>
+            <button onClick={() => navigate("/shop")}>Explore Now</button>
           </div>
         ))}
       </div>

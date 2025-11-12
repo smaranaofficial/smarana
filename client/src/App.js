@@ -1,7 +1,13 @@
 // src/App.js
 import React, { useState } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
 import SplashScreen from "./components/SplashScreen";
 import Home from "./pages/Home";
+import SmaranaShopNow from "./pages/SmaranaShopNow";
+
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 import "./App.css";
 
 function App() {
@@ -11,10 +17,19 @@ function App() {
     setShowSplash(false);
   };
 
+  if (showSplash) {
+    return <SplashScreen onFinish={handleSplashFinish} />;
+  }
+
   return (
-    <div className="App">
-      {showSplash ? <SplashScreen onFinish={handleSplashFinish} /> : <Home />}
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/shop" element={<SmaranaShopNow />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
 }
 

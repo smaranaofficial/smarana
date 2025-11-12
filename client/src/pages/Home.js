@@ -15,7 +15,6 @@ const Home = () => {
       <HeroCarousel />
       <ExclusiveCollection />
       <WhyChooseSmarana />
-      <Footer />
     </div>
   );
 };

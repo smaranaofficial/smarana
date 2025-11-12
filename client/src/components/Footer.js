@@ -1,4 +1,6 @@
+// src/components/Footer.js
 import React from "react";
+import { Link } from "react-router-dom";
 import "./Footer.css";
 import logo from "../assets/SMARANA4.png";
 import { FaInstagram, FaFacebookF, FaTwitter, FaEnvelope } from "react-icons/fa";
@@ -14,10 +16,10 @@ const Footer = () => {
 
         {/* Quick Links */}
         <div className="footer-links">
-          <a href="#home">Home</a>
-          <a href="#shop">Shop</a>
-          <a href="#about">About</a>
-          <a href="#contact">Contact</a>
+          <Link to="/">Home</Link>
+          <Link to="/shop">Shop</Link>
+          <Link to="/about">About</Link>
+          <Link to="/contact">Contact</Link>
         </div>
 
         {/* Social Icons */}

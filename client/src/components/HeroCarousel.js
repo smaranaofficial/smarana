@@ -1,5 +1,6 @@
 // src/components/HeroCarousel.js
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import Slider from "react-slick";
 import "./HeroCarousel.css";
 import "slick-carousel/slick/slick.css";
@@ -10,6 +11,7 @@ import banner2 from "../assets/banner2.jpg.png";
 import banner3 from "../assets/banner3.jpg.png";
 
 const HeroCarousel = () => {
+  const navigate = useNavigate();
   const settings = {
     dots: true,
     infinite: true,
@@ -30,7 +32,7 @@ const HeroCarousel = () => {
             <img src={banner} alt={`Banner ${index + 1}`} className="carousel-image" />
             <div className="carousel-overlay">
               <h1 className="carousel-text">Grace you'll always remember</h1>
-              <button className="carousel-btn">Shop Now</button>
+              <button onClick={() => navigate("/shop")}>Shop Now</button>
             </div>
           </div>
         ))}

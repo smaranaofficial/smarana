@@ -1,0 +1,93 @@
+/* src/pages/SmaranShopNow.css */
+
+.shopnow-container {
+  padding: 10px 20px 60px; /* space for navbar & footer */
+  background-color: #fff8e7;
+  min-height: 100vh;
+  text-align: center;
+  scroll-behavior: smooth;
+}
+
+/* Header */
+.shopnow-header {
+  font-size: 2rem;
+  font-weight: 600;
+  color: #975e7e;
+  margin-bottom: 20px;
+  font-family: LUCCIDA HANDWRITING, cursive;
+}
+
+/* Search Bar */
+.shopnow-search input {
+  width: 95%;
+  max-width: 400px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  border-radius: 25px;
+  outline: none;
+  transition: 0.3s;
+  font-size: 1rem;
+}
+
+.shopnow-search input:focus {
+  border-color: #d4af37;
+  box-shadow: 0 0 5px rgba(212, 175, 55, 0.4);
+}
+
+/* Product Grid */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 20px;
+  margin-top: 30px;
+  padding: 0 10px;
+}
+
+.product-card {
+  background: #f1e9d2;
+  border-radius: 10px;
+  padding: 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.product-card h3 {
+  font-size: 1rem;
+  margin: 10px 0 5px;
+}
+
+.product-card p {
+  color: #555;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.product-card button {
+  background-color: #635d4c;
+  border: none;
+  color: #f5f0f5;
+  padding: 8px 16px;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.product-card button:hover {
+  background-color: #211d1e;
+}
+
+.no-results {
+  color: #777;
+  margin-top: 40px;
+}

@@ -42,10 +42,21 @@
   text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.4);
   animation: fadeIn 1.2s ease-in;
 }
-
+.carousel-overlay button {
+  background-color: rgb(236, 203, 203);
+  border-radius: 15%;
+  border: none;
+  padding: 5px;
+  animation: fadeIn 1.2s ease-in;
+  transition: all 0.3s ease;
+}
+.carousel-overlay button:hover {
+  background-color: rgb(255, 240, 240);
+  transform: scale(1.05);
+}
 .carousel-btn {
   background: var(--primary);
-  color: white;
+  color: rgb(254, 252, 252);
   border: none;
   padding: 0.8rem 2.2rem;
   border-radius: 50px;
