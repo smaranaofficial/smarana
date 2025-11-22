@@ -6,6 +6,7 @@ import SplashScreen from "./components/SplashScreen";
 import Home from "./pages/Home";
 import SmaranaShopNow from "./pages/SmaranaShopNow";
 import ProductDetails from "./pages/ProductDetails";
+import About from "./pages/About";
 
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
@@ -29,6 +30,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<SmaranaShopNow />} />
         <Route path="/product/:id" element={<ProductDetails />} />
+        <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
     </Router>

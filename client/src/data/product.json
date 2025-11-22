@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Elegant Silk Saree",
+    "image": "https://via.placeholder.com/300x400?text=Silk+Saree",
+    "price": 2499,
+    "category": "Sarees"
+  },
+  {
+    "id": 2,
+    "name": "Handloom Kurta Set",
+    "image": "https://via.placeholder.com/300x400?text=Kurta+Set",
+    "price": 1899,
+    "category": "Kurtas"
+  },
+  {
+    "id": 3,
+    "name": "Traditional Lehenga",
+    "image": "https://via.placeholder.com/300x400?text=Lehenga",
+    "price": 4999,
+    "category": "Lehengas"
+  },
+  {
+    "id": 4,
+    "name": "Cotton Dress",
+    "image": "https://via.placeholder.com/300x400?text=Cotton+Dress",
+    "price": 1599,
+    "category": "Dresses"
+  },
+  {
+    "id": 5,
+    "name": "Party Wear Gown",
+    "image": "https://via.placeholder.com/300x400?text=Party+Gown",
+    "price": 3299,
+    "category": "Gowns"
+  }
+]

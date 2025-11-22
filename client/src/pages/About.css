@@ -1,0 +1,67 @@
+/* 🌸 About Page — Matching Smarana’s Elegant Theme */
+
+.about-page {
+  min-height: 100vh;
+  background-color: #f9f3ef; /* soft beige background */
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  color: #5c4742; /* warm gray-brown for text */
+}
+
+/* Title */
+.about-page h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+  color: #7b2b3a; /* deep rose heading */
+  margin-bottom: 20px;
+  letter-spacing: 1px;
+}
+
+/* Description paragraph */
+.about-page p {
+  font-size: 1.2rem;
+  line-height: 1.8;
+  max-width: 850px;
+  color: #5c4742;
+  margin-bottom: 40px;
+}
+
+/* Accent line under title */
+.about-divider {
+  width: 80px;
+  height: 3px;
+  background-color: #c07c63; /* rose-gold accent */
+  margin: 15px 0 25px;
+  border-radius: 2px;
+}
+
+/* Quote or motto */
+.about-quote {
+  font-style: italic;
+  font-size: 1.3rem;
+  color: #7b2b3a;
+  border-left: 4px solid #c07c63;
+  padding-left: 15px;
+  margin-top: 20px;
+}
+
+/* Fade-in animation */
+.about-page {
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
