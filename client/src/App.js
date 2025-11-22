@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import SplashScreen from "./components/SplashScreen";
 import Home from "./pages/Home";
 import SmaranaShopNow from "./pages/SmaranaShopNow";
+import ProductDetails from "./pages/ProductDetails";
 import About from "./pages/About";
 
 import Navbar from "./components/Navbar";
@@ -28,6 +29,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/shop" element={<SmaranaShopNow />} />
+        <Route path="/product/:id" element={<ProductDetails />} />
         <Route path="/about" element={<About />} />
       </Routes>
       <Footer />
